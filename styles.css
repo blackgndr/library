@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'kingthings calligraphics';
+    src: url(fonts/kingthings-webkit/kingthings_calligraphica_2-webfont.woff2) format('woff2');
+    src: url(fonts/kingthings-webkit/kingthings_calligraphica_2-webfont.woff2) format('woff');   
+}
+
+@font-face {
+    font-family: 'kingthings calligraphics';
+    src: url(fonts/kingthings-webkit/kingthings_calligraphica_italic-webfont.woff2) format('woff2');
+    src: url(fonts/kingthings-webkit/kingthings_calligraphica_italic-webfont.woff) format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'kingthings calligraphics';
+    src: url(fonts/kingthings-webkit/kingthings_calligraphica_light-webfont.woff2) format('woff2');
+    src: url(fonts/kingthings-webkit/kingthings_calligraphica_light-webfont.woff) format('woff');
+    font-weight: lighter;
+}
+
+body {
+    background-color: rgb(122, 70, 77);
+    font-family: 'kingthings calligraphics', sans-serif;
+}
+
+body > h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 5em;
+    color: rgb(175, 151, 151);
+}
+
+#books {
+    margin: 50px;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+
+.book {
+    background-color: rgb(175, 151, 151);
+    border: 4px dashed brown;
+    padding: 12px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#newBookBtn {
+    font-family: 'kingthings calligraphics';
+    color: rgb(175, 151, 151);
+    border: none;
+    font-size: 2em;
+    background-color: brown;
+    margin: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.removeBtn,
+.readBtn {
+    font-family: 'kingthings calligraphics';
+    width: 100px;
+    align-self: center;
+    font-size: 0.7em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 1.2em;
+}
+
+form > :nth-child(-n+3) {
+    display: flex;
+    justify-content: space-between;
+}
+
+label, input {
+    font-size: 1.1em;
+}
+
+input {
+    margin-left: 9px;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+#no {
+    margin-bottom: 16px;
+    margin-left: 13px;
+}
+
+form button {
+    font-family: 'kingthings calligraphics';
+    font-size: 1.1em;
+    width: 100px;
+    margin: auto;
+}

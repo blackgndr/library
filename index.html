@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Not So Fancy Library</h1>
+    <div id="books"></div>
+    <dialog id="form">
+        <form method="dialog">
+            <h1>New Book Yay</h1>
+            <div>
+                <label for="title">Title: </label> 
+                <input type='text' id="title" name="title">
+            </div>
+            <div>
+                <label for="author">Author: </label>
+                <input type="text" id="author" name="author">    
+            </div>
+            <div>
+                <label for="pages">Number of Pages: </label>
+                <input type="number" id="pages" name="pages">
+            </div>
+            <h2>Have You Read It?</h2>
+            <div>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="read" checked>
+            </div>
+            <div>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="read">
+            </div>
+            <button id="addBookBtn" type="submit">Add Book</button>
+            <button>Nevermind</button>
+        </form>
+    </dialog>
+    <button id="newBookBtn">NEW BOOK</button>
+    <script src="main.js"></script>
+</body>
+</html>
